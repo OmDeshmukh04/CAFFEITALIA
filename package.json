@@ -1,0 +1,17 @@
+{
+  "name": "caffe-italia-marblehead-concept",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "pages": "node scripts/build-pages.mjs",
+    "predev": "npm run pages",
+    "dev": "vite --host 127.0.0.1 --port 5175",
+    "prebuild": "npm run pages",
+    "build": "vite build",
+    "check": "node --check src/main.js && node --check scripts/build-pages.mjs"
+  },
+  "devDependencies": {
+    "vite": "^7.3.7"
+  }
+}
